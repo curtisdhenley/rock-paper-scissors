@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <title>Rock, Paper, Scissors</title>
 </head>
 <body>
     <header>
         <h1>Rock, Paper, Scissors</h1>
-        <h2 class="greeting">Can you win?</h2>
     </header>
     <div class="container">
-        <section class="display">
-            <div class="info">
-                <h3>You:</h3><span id ="player-score">0</span>
+        <section class="score-board">
+            <div class="flex-container">
+                <div id="player-label" class="badge">Player</div>
+                <div id="computer-label" class="badge">Comp</div>
             </div>
-            <div class="show player">
-                <i class="fa-regular fa-hand-back-fist"></i>
-            </div>
-        </section>
-        <section class="display">
-            <div class="info">
-                <h3>Computer :</h3><span id="computer-score">0</span>
-            </div>
-            <div class="show computer">
-                <i class="fa-regular fa-hand"></i>
-            </div>
+            <span id="player-score">0</span>:<span id="computer-score">0</span>
         </section>
     </div>
-    <h2>What's your move?</h2>
+    <div class="results"> <!-- div used to update result message -->
+        <p>Good luck!</p>
+    </div>
     <section class="selections">
-        <button id="rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-        <button id="paper"><i class="fa-regular fa-hand"></i></button>
-        <button id="scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+        <h2>What's your move?</h2>
+        <button id="rock"><img src="/images/RPS-rock.png"/></button>
+        <button id="paper"><img src="/images/RPS-paper.png"/></button>
+        <button id="scissors"><img src="/images/RPS-scissors.png"/></button>
     </section>
+    <script src="/app.js"></script>
 </body>
 </html>
